@@ -1,10 +1,10 @@
 # FedMIA-Repository
 
-### This is the official pytorch implementation of the paper:
+### This is the official pytorch implementation of the paper
 
 - **FedMIA: An Effective Membership Inference Attack Exploiting  "All for One" Principle in Federated Learning**
 - [Paper PDF in Arxiv](https://arxiv.org/pdf/2402.06289v2)
-
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 ## Description
 
@@ -12,7 +12,6 @@ Federated Learning (FL) is a promising approach for training machine learning mo
 In this paper, we first formulate a one-tailed likelihood-ratio hypothesis test based on the likelihood of updates from non-target clients. Building upon this formulation, we introduce a three-step Membership Inference Attack (MIA) method, called FedMIA, which follows the "all for one"—leveraging updates from all clients across multiple communication rounds to enhance MIA effectiveness. Both theoretical analysis and extensive experimental results demonstrate that FedMIA outperforms existing MIAs in both classification and generative tasks. Additionally, it can be integrated as an extension to existing methods and is robust against various defense strategies, Non-IID data, and different federated structures.
 
 ![Overview of FedMIA](Overview.png)
-
 
 ## Getting started
 
@@ -24,13 +23,13 @@ In the experiment, we utilized two image classification datasets: [CIFAR-100](ht
 
 ### How to run
 
+#### 1. Basic Training under Federated Learning
 
-#### 1. Basic Training under Federated Learning:
-The basic command to run our repository is in `run.sh`. We provide two models, AlexNet and ResNet, based on the above two data sets. 
+The basic command to run our repository is in `run.sh`. We provide two models, AlexNet and ResNet, based on the above two data sets.
 
 During model training, the Membership Disclosure Measure (MDM) information, i.e., **data loss, cosine similarity and gradient norm**, is saved for subsequent attack implementation.
 
-#### 2. Attacks:
+#### 2. Attacks
 
 We conducted a comprehensive comparison of our methods, **FedMIA-I** and **FedMIA-II**, against six baseline attack methods: Blackbox-Loss[1], Grad-Cosine[2], Grad-Norm[3], Loss-Series[4], Avg-Cosine[2], and Grad-Diff[2]. FedMIA-I is utilizes the model loss measurement, while FedMIA-II employs the Grad-Cosine measurement.
 
@@ -49,14 +48,11 @@ The summary of these methods including the use of temporal and spatial informati
 
 These attacks are implemented in `mia_attack_auto.py` and the running command example is provided in `membership_attack.sh`. You will get a pdf format figure containing attack results after running it.
 
-
 #### 3. Defenses
 
 We evaluate the robustness of FedMIA against six defense methods, including Gradient Perturbation (Perturb) [5], Gradient Sparsification (Sparse) [9,10,11], MixUp [12], Data Augmentation [7], Data Sampling [8], and a combination of Data Augmentation + Sampling.
 
-
 These defenses are controlled by the parameters in `utils/args.py`.
-
 
 ### References
 
