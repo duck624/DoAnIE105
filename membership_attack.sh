@@ -1,3 +1,4 @@
+#duck
 #!/bin/bash
 # Membership inference attack command
 
@@ -6,7 +7,7 @@ seed=1
 total_epoch=70
 gpu=0
 num_users=5
-samples_per_user=1500
+samples_per_user=500  # Đã sửa từ 1500 thành 500 để khớp với dữ liệu thực tế
 
 # Activate virtual environment (if exists)
 if [ -f /home/aiduc/FedMIA/venv/bin/activate ]; then
