@@ -15,13 +15,15 @@ Dự án này tập trung vào việc nghiên cứu và triển khai phương ph
 
 ├── dataset.py                    # Tập lệnh xử lý và tải dữ liệu
 
-├── _federated_learning.py        # Tập lệnh triển khai học liên kết
+├── log_fedmia                   # Thư mục chứa kết quả tấn công
 
-├── _fed_membership_attack.py     # Tập lệnh triển khai tấn công FedMIA
+├── main.py        # Tập lệnh triển khai học liên kết
 
-├── 1_run_federated_learning.sh   # Tập lệnh shell chạy học liên kết
+├── mia_attack_auto.py     # Tập lệnh triển khai tấn công FedMIA
 
-├── 2_run_fed_membership_attack.sh# Tập lệnh shell chạy tấn công FedMIA
+├── run.sh   # Tập lệnh shell chạy học liên kết
+
+├── membership_attack.sh   # Tập lệnh shell chạy tấn công FedMIA
 
 ├── requirements.txt              # Danh sách các thư viện phụ thuộc
 
@@ -52,7 +54,7 @@ pip install -r requirements.txt
 Chạy lệnh sau để bắt đầu quá trình huấn luyện mô hình FL:
 
 ```bash
-bash 1_run_federated_learning.sh
+bash run.sh
 ```
 
 ### 2. Thực hiện Tấn công FedMIA
@@ -60,12 +62,12 @@ bash 1_run_federated_learning.sh
 Sau khi huấn luyện xong mô hình FL, chạy lệnh sau để thực hiện tấn công suy luận thành viên:
 
 ```bash
-bash 2_run_fed_membership_attack.sh
+bash membership_attack.sh
 ```
 
 ## 🧪 Kết quả
 
-Kết quả của quá trình huấn luyện và tấn công sẽ được lưu trong thư mục `experiments/`. Bạn có thể tìm thấy các biểu đồ, số liệu và mô hình đã được huấn luyện tại đây.
+Kết quả của quá trình huấn luyện và tấn công sẽ được lưu trong thư mục `log_fedmia`. Bạn có thể tìm thấy các biểu đồ, số liệu và mô hình đã được huấn luyện tại đây.
 
 ## 📚 Tài liệu Tham khảo
 
