@@ -15,15 +15,15 @@ Dự án này tập trung vào việc nghiên cứu và triển khai phương ph
 
 ├── dataset.py                    # Tập lệnh xử lý và tải dữ liệu
 
-├── log_fedmia                   # Thư mục chứa kết quả tấn công
+├── log_fedmia                    # Thư mục chứa kết quả tấn công
 
-├── main.py        # Tập lệnh triển khai học liên kết
+├── main.py                       # Tập lệnh triển khai học liên kết
 
-├── mia_attack_auto.py     # Tập lệnh triển khai tấn công FedMIA
+├── mia_attack_auto.py            # Tập lệnh triển khai tấn công FedMIA
 
-├── run.sh   # Tập lệnh shell chạy học liên kết
+├── run.sh                        # Tập lệnh shell chạy học liên kết
 
-├── membership_attack.sh   # Tập lệnh shell chạy tấn công FedMIA
+├── membership_attack.sh          # Tập lệnh shell chạy tấn công FedMIA
 
 ├── requirements.txt              # Danh sách các thư viện phụ thuộc
 
